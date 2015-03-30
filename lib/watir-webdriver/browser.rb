@@ -343,7 +343,7 @@ module Watir
     #
     # @example
     #   browser.without_checkers do
-    #     browser.element(:name => "new_user_button").click
+    #     browser.element(name: "new_user_button").click
     #   end
     #
     # @yieldparam [Watir::Browser]
@@ -415,7 +415,7 @@ module Watir
     end
 
     def wrap_element(element)
-      Watir.element_class_for(element.tag_name.downcase).new(self, :element => element)
+      Watir.element_class_for(element.tag_name.downcase).new(self, element: element)
     end
 
   end # Browser

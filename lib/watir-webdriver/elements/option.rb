@@ -11,7 +11,7 @@ module Watir
     # Selects this option.
     #
     # @example
-    #   browser.select(:id => "foo").options.first.select
+    #   browser.select(id: "foo").options.first.select
     #
 
     alias_method :select, :click
@@ -20,7 +20,7 @@ module Watir
     # Toggles the selected state of this option.
     #
     # @example
-    #   browser.select(:id => "foo").options.first.toggle
+    #   browser.select(id: "foo").options.first.toggle
     #
 
     alias_method :toggle, :click
@@ -29,7 +29,7 @@ module Watir
     # Clears (i.e. toggles selected state) option.
     #
     # @example
-    #   browser.select(:id => "foo").options.first.clear
+    #   browser.select(id: "foo").options.first.clear
     #
 
     def clear
